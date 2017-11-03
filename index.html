@@ -6,10 +6,31 @@
   <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="greeting">
-    <h1>Vinesh Persaud</h1>
-    <h4>// Web Developer //</h3>
-    <h3>Coming Soon!</h1>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about_me">About Me</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Skills</a>
+    <a href="#contact">Blog</a>
+    <a href="#contact">Contact</a>
   </div>
+
+  <div id="particles-js">
+    <div class="greeting">
+      <h1>Hi, Im Vinesh </h1>
+      <h4>// A Full Stack Web Developer  //</h3>
+      <!--<h3>Coming Soon!</h1>-->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function(){
+      console.log('particles.json loaded...');
+    });
+  </script>
+
 </body>
 </html>
