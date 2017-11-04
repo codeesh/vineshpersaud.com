@@ -60,11 +60,13 @@ html,body {
 
 .greeting {
   z-index: 5;
+ color: #ecf0f1;
  position: absolute;
  top: 35%;
  left: 50%;
  margin-right: -50%;
  transform: translate(-50%, -50%)
+
 
 }
 
@@ -77,13 +79,12 @@ html,body {
 /*Name*/
  .greeting h1{
     font-size: 400%;
-    color: #e74c3c;
+
  }
 
 /* Web Developer */
   .greeting h4{
-    font-size: 100%;
-    color: #ecf0f1;
+    font-size: 105%;
  }
 /*coming soon*/
   .greeting h3{
@@ -94,26 +95,38 @@ html,body {
   height: 100vh;
 }
 
+#name{
+  color: #e74c3c;
+}
+
 
 .contact-button {
-
+    font-family: 'Pathway Gothic One', sans-serif;
     position: absolute;
-    margin: 10% 35%;
-    background-color: #e74c3c;
+    margin: 10% 30%;
     border: none;
-    color: white;
+    color: #e74c3c;
     padding: 10px 38px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    border-radius: 25px;
+    border: 2px solid #e74c3c;
+    white-space: nowrap;
+  text align: center;
 }
 
 .contact-button:hover{
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+  background: #e74c3c;
+  color: white;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s ;
+  transition: all ease 0.5s ;
 }
  #page2{
    position: absolute;
@@ -127,7 +140,7 @@ html,body {
    margin-left: 200px;
    margin-top: 100px;
    color: white;
-   background-color: #e67e22;
+   background-color: #2f2d40;
    box-shadow: 5px 3px 1px #95a5a6;
    border-radius: 3px;
    width: 400px;
@@ -150,7 +163,7 @@ html,body {
    margin-left: 190px;
    margin-top: 100px;
 
-   background-color: #95a5a6;
+   background-color: #2f2d40;
    box-shadow: 5px 3px 1px #95a5a6;
    border-radius: 3px;
    width: 400px;
