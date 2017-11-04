@@ -7,35 +7,38 @@ html,body {
         vertical-align: baseline;
         background: transparent;
     }
-    /* The navigation bar */
+/* The navigation bar */
 .navbar {
+  margin-top: 15px;
   height: 100%;
-  width: 140px;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ecf0f1;
   overflow-x: hidden;
-  padding-top: 20px;
-
+  display: inline-block;
+  text-align: center;
 }
 
 /* Links inside the navbar */
 .navbar a {
 
-  display: block;
-  color: #2c3e50;
+  display: inline;
+  color: #ecf0f1;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 22px;
-
+  padding-top: 30px;
 }
 
 .navbar :hover {
-  background-color: #e74c3c;
+  color: #e74c3c;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s ;
+  transition: all ease 0.8s ;
 }
 
 /* Main content */
@@ -46,20 +49,17 @@ html,body {
   z-index: -1;
   padding:  0;
   margin: 0 ;
-  height: 100%;
+  height: 100vh;
   width:  100%;
-  background-color: #34495e;
-  background-size: cover;
-  position: fixed;
-  background: #282537;
-background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 }
 
 
 .greeting {
+  z-index: 5;
  position: absolute;
  top: 35%;
  left: 50%;
@@ -70,23 +70,89 @@ background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 
 .greeting h1,h4,h3{
   text-align: center;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Nixie One', cursive;
 
  }
 
-
+/*Name*/
  .greeting h1{
-    font-size: 600%;
+    font-size: 400%;
     color: #e74c3c;
  }
 
 /* Web Developer */
   .greeting h4{
-    font-size: 180%;
+    font-size: 100%;
     color: #ecf0f1;
  }
 /*coming soon*/
   .greeting h3{
     font-size: 400%;
     color: #e74c3c;
+ }
+#page1{
+  height: 100vh;
+}
+
+
+.contact-button {
+
+    position: absolute;
+    margin: 10% 35%;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 10px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.contact-button:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+ #page2{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background-color: #c0392b;
+ }
+
+ #skills{
+   float: left;
+   margin-left: 200px;
+   margin-top: 100px;
+   color: white;
+   background-color: #e67e22;
+   box-shadow: 5px 3px 1px #95a5a6;
+   border-radius: 3px;
+   width: 400px;
+   height: 600px
+
+ }
+
+#skills h1{
+  text-align: center;
+  padding-top:80px;
+}
+ #skills li{
+   list-style: none;
+   margin-left: 0;
+   margin-bottom:10px;
+ }
+
+ #about_me {
+   float: left;
+   margin-left: 190px;
+   margin-top: 100px;
+
+   background-color: #95a5a6;
+   box-shadow: 5px 3px 1px #95a5a6;
+   border-radius: 3px;
+   width: 400px;
+   height: 400px
  }
