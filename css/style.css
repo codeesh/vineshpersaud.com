@@ -9,31 +9,38 @@ html,body {
     }
 /* The navigation bar */
 .navbar {
-  margin-top: 15px;
-  height: 100%;
+  padding-top: 15px;
+  height: 45px;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 6;
   overflow-x: hidden;
   display: inline-block;
   text-align: center;
+  background-color: white;
+
 }
 
 /* Links inside the navbar */
 .navbar a {
-
+  font-weight:bold;
   display: inline;
-  color: #ecf0f1;
+  color: #2c3e50;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Poiret One', cursive;
+
+
+
   font-size: 22px;
   padding-top: 30px;
 }
 
 .navbar :hover {
-  color: #e74c3c;
+
+  background-color: #e74c3c;
+  color: white;
   -webkit-transition: all ease 0.8s;
   -moz-transition: all ease 0.8s;
   -o-transition: all ease 0.8s;
@@ -51,10 +58,9 @@ html,body {
   margin: 0 ;
   height: 100vh;
   width:  100%;
-  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+
+  background-color: #1371af;
+
 }
 
 
@@ -97,6 +103,7 @@ html,body {
 
 #name{
   color: #e74c3c;
+  text-shadow: 1px 1px #;
 }
 
 
@@ -113,7 +120,7 @@ html,body {
     font-size: 18px;
     border: 2px solid #e74c3c;
     white-space: nowrap;
-  text align: center;
+    text align: center;
 }
 
 .contact-button:hover{
@@ -132,7 +139,7 @@ html,body {
    position: absolute;
    width: 100%;
    height: 100vh;
-   background-color: #c0392b;
+
  }
 
  #skills{
